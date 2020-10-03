@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+html, body {
+    margin: 0;
+    height: 90%;
+    background-color: black
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    color: paleturquoise;
+    text-align: center;
+    text-shadow: 2px 1px rgb(120,203,237);
+    border-color:  rgb(120,203,237);
+    font-size: 2.8em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#status {
+    color: rgb(120,203,237);
+    font-size: 6ch;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+    transition-duration: .4s;
+    border-color: rgb(120,203,237);
+    border-style: groove;
 }
 
-.App-link {
-  color: #61dafb;
+.board-container {
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Prevents outline on button when clicked */
+*:focus {outline:none}
+
+button {
+    font-size: 140px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    color: rgb(120,203,237);
+    background-color: black;
+    padding: .5px;
+    border-width: .5px;
+}
+
+.unused-square:hover {
+    background-color: rgb(25, 147, 168);
+} 
+
+.unused-square:active {
+    background-color:white;
+    background-size: 100%;
+    transition: background 0s;
 }
