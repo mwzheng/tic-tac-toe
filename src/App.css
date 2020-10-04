@@ -17,10 +17,14 @@ h1 {
     font-size: 6ch;
 }
 
-button {
-    transition-duration: .4s;
-    border-color: rgb(120,203,237);
-    border-style: groove;
+#resetBtn {
+    font-size: 50px;
+    margin-top: .5em;
+    height: 120px;;
+}
+
+#resetBtn:hover {
+    background-color: red;
 }
 
 .board-container {
@@ -31,6 +35,9 @@ button {
 *:focus {outline:none}
 
 button {
+    transition-duration: .4s;
+    border-color: rgb(120,203,237);
+    border-style: groove;
     font-size: 140px;
     text-align: center;
     width: 200px;
