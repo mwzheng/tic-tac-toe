@@ -2,7 +2,6 @@ import React from 'react'
 
 
 const Reset = ({ setEmpty, setPlayer, setUsed, setSquares, id, setActive }) => {
-
     function resetGame() {
         setSquares(Array(9).fill('-'));
         setUsed(Array(9).fill('unused-square'));
@@ -11,11 +10,9 @@ const Reset = ({ setEmpty, setPlayer, setUsed, setSquares, id, setActive }) => {
         setEmpty(8);
     }
 
-
     return (
         <button id={id} onClick={resetGame}>Restart</button>
     )
 }
-
 
 export default Reset;
